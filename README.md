@@ -40,12 +40,15 @@ Visual Studio (SSDT)
 Three Excel files used as input:
 
 Excel1
+
 <img width="679" height="391" alt="image" src="https://github.com/user-attachments/assets/13e9748b-b8d8-42d7-a2b3-7a7c898badc2" />
 
 Excel2
+
 <img width="658" height="392" alt="image" src="https://github.com/user-attachments/assets/2d48a7fa-85fe-4402-ba7f-8ccce68c4539" />
 
 Excel3
+
 <img width="662" height="408" alt="image" src="https://github.com/user-attachments/assets/dabe8941-c7f8-456d-b019-ed2366576960" />
 
 Each contains a common ID column used for sorting and merging.
@@ -55,9 +58,11 @@ Each contains a common ID column used for sorting and merging.
 The SSIS package is divided into:
 
 Control Flow
+
 <img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/b04617d6-7fc1-40af-b99d-e149334a59b7" />
 
 Data Flow
+
 <img width="1914" height="987" alt="image" src="https://github.com/user-attachments/assets/54098c0b-456a-4c48-a29c-7280a7199a63" />
 
 This screenshot should show the entire SSIS package canvas.
@@ -108,10 +113,12 @@ Single input → multiple outputs.
 🟢 Path 1 – Local SQL Server Database
 
 Load into SQL Server destination
+
 <img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/770f9b28-830c-4e13-84ff-7003adb37386" />
 
 
 🔵 Path 2 – CSV Flat File Output
 
 Write to CSV Flat File Destination
+
 <img width="1919" height="791" alt="image" src="https://github.com/user-attachments/assets/05b5d9ac-ebdb-44e9-b542-df1de16223cb" />
