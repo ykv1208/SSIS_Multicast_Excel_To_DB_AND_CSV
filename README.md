@@ -1,7 +1,7 @@
-SSIS_Multicast_Excel_To_DB_AND_CSV
+# SSIS_Multicast_Excel_To_DB_AND_CSV
 
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project demonstrates an end-to-end SSIS ETL pipeline that ingests data from three Excel source files, applies sorting and merging transformations, and loads the final dataset into two destinations in parallel using the SSIS Multicast transformation:
 
@@ -9,7 +9,7 @@ This project demonstrates an end-to-end SSIS ETL pipeline that ingests data from
 
 ✅ CSV Flat File Output
 
-🎯 Project Objective
+## 🎯 Project Objective
 
 Design and implement an SSIS package that:
 
@@ -29,7 +29,7 @@ SQL Server (sorted by Month)
 
 CSV file (sorted by First Name)
 
-🛠 Tools & Technologies
+## 🛠 Tools & Technologies
 
 SSIS (SQL Server Integration Services)
 
@@ -41,7 +41,7 @@ Flat File (CSV)
 
 Visual Studio (SSDT)
 
-📊 Source Files
+## 📊 Source Files
 
 Three Excel files are used as input sources:
 
@@ -135,14 +135,14 @@ Multiple outputs
 
 Enables parallel data loading
 
-📤 Parallel Data Load Using Multicast
+## 📤 Parallel Data Load Using Multicast
 🟢 Path 1 – SQL Server Destination
 
 Loads data into Local SQL Server
 
 Data is sorted by Month before insertion
 
-<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/770f9b28-830c-4e13-84ff-7003adb37386" 
+<img width="1919" height="982" alt="image" src="https://github.com/user-attachments/assets/770f9b28-830c-4e13-84ff-7003adb37386" >
 
 🔵 Path 2 – CSV Flat File Destination
 
