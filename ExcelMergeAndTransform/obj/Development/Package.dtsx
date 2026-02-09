@@ -1,0 +1,3147 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/6/2026 6:06:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-NQ3GQKTQ"
+  DTS:CreatorName="LAPTOP-NQ3GQKTQ\Lenovo"
+  DTS:DTSID="{D8848785-23F2-4784-9BAF-5510881CBFF0}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1010.2"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{EAD617CB-B4E1-473B-A790-B03062258212}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CSV DATA]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3710E32F-6F46-4ED7-AC50-9EF9B4973057}"
+      DTS:ObjectName="CSV DATA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Company Work\SSIS\DAILY TASK\06-02-26\FINAL DATA.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{F7951412-3AF4-46F3-9C3C-DD3F02BEC9FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="name"
+              DTS:DTSID="{1AA597DD-4B7A-4A8D-8A61-DC89620B3C3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="email"
+              DTS:DTSID="{8866F7DF-B8AB-4443-976E-8D880AE5CB6B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="gender"
+              DTS:DTSID="{85A0AEB4-690D-4DB6-BD18-EB32AF236EA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="salary"
+              DTS:DTSID="{FD507A62-9073-4C15-A3F8-A70711026610}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="joining_date"
+              DTS:DTSID="{693EA042-5019-4481-BC85-BD502330056B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of id"
+              DTS:DTSID="{5626C948-6648-4E58-A4D5-75C80F707903}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of name"
+              DTS:DTSID="{242A2638-5B23-47EA-84CC-B87FE3AAB97A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of email"
+              DTS:DTSID="{BAC15396-24AA-4F87-A1CB-63E8A5F8BFF0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of gender"
+              DTS:DTSID="{B2CF0B8B-48B5-4D12-B723-84F83B8A1E30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of salary"
+              DTS:DTSID="{33BD97FA-2909-4278-A620-AC2A0D936836}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of joining_date"
+              DTS:DTSID="{93736001-BA32-4C2C-A55D-E63C298407E6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{1E082086-656E-4D00-97C7-FA6E3ABD60F7}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Company Work\SSIS\Daily Task\06-02-26\CSE_EMP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{571C6A31-AB9C-4FFD-9A83-B1AA4EAE18CA}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Company Work\SSIS\Daily Task\06-02-26\IT_EMP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{16133205-F520-4F21-A784-F7A4D7849936}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=D:\Company Work\SSIS\Daily Task\06-02-26\MECH_EMP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQLEXPRESS.SSIS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{11DA4018-7390-459E-A646-28FE78D1B30D}"
+      DTS:ObjectName="localhost\SQLEXPRESS.SSIS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=SSIS;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{11DA4018-7390-459E-A646-28FE78D1B30D}localhost\SQLEXPRESS.SSIS;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{25610128-d673-49ab-9ca2-ef052874e891}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\CSE_EMP"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="CSE_EMP"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">data$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\CSE_EMP.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[email]"
+                      name="email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      name="salary"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      name="joining_date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      dataType="r8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      dataType="wstr"
+                      length="255"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      dataType="r8"
+                      name="salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      name="joining_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      name="email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      name="salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      name="joining_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Data Conversion 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of id]"
+                      name="Copy of id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]"
+                      name="Copy of name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of email]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of email]"
+                      name="Copy of email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of gender]"
+                      name="Copy of gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of salary]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of salary]"
+                      name="Copy of salary"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of joining_date]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of joining_date]"
+                      name="Copy of joining_date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\DB DESTINATION TABLE"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="DB DESTINATION TABLE"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[task3_maintable]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQLEXPRESS.SSIS]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQLEXPRESS.SSIS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of id]"
+                      cachedDataType="i4"
+                      cachedName="Copy of id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of name"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of gender"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of salary]"
+                      cachedDataType="i4"
+                      cachedName="Copy of salary"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[salary]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of joining_date]"
+                      cachedDataType="date"
+                      cachedName="Copy of joining_date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[Joining_date]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of joining_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].Columns[Copy of email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of email"
+                      externalMetadataColumnId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of email]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="46"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="46"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[salary]"
+                      dataType="i4"
+                      name="salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input].ExternalColumns[Joining_date]"
+                      dataType="dbDate"
+                      name="Joining_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\DB DESTINATION TABLE.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\DB DESTINATION TABLE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\DB DESTINATION TABLE.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CSV DATA]"
+                  connectionManagerRefId="Package.ConnectionManagers[CSV DATA]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[email]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[gender]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[salary]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[joining_date]"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of id]"
+                      cachedDataType="i4"
+                      cachedName="Copy of id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of id]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of name"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of name]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of email]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of email"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of email]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of email]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Copy of gender"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of gender]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of gender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of salary]"
+                      cachedDataType="i4"
+                      cachedName="Copy of salary"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of salary]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of salary]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of joining_date]"
+                      cachedDataType="date"
+                      cachedName="Copy of joining_date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of joining_date]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of joining_date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[id]"
+                      dataType="r8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[email]"
+                      dataType="wstr"
+                      length="255"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[salary]"
+                      dataType="r8"
+                      name="salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      name="joining_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of id]"
+                      dataType="i4"
+                      name="Copy of id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Copy of name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of email]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Copy of email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of gender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Copy of gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of salary]"
+                      dataType="i4"
+                      name="Copy of salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of joining_date]"
+                      dataType="date"
+                      name="Copy of joining_date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\IT_EMP"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="IT_EMP"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">data$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\IT_EMP.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[email]"
+                      name="email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      name="salary"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      name="joining_date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      dataType="r8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      dataType="wstr"
+                      length="255"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      dataType="r8"
+                      name="salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      name="joining_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      name="email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      name="salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      name="joining_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\MECH_EMP"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="MECH_EMP"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">data$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\MECH_EMP.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[name]"
+                      name="name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[email]"
+                      name="email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[gender]"
+                      name="gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[salary]"
+                      name="salary"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[joining_date]"
+                      name="joining_date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[id]"
+                      dataType="r8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[name]"
+                      dataType="wstr"
+                      length="255"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[email]"
+                      dataType="wstr"
+                      length="255"
+                      name="email" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="gender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[salary]"
+                      dataType="r8"
+                      name="salary" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].ExternalColumns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      name="joining_date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[email]"
+                      name="email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[salary]"
+                      name="salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[joining_date]"
+                      name="joining_date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Merge"
+              componentClassID="Microsoft.Merge"
+              contactInfo="Merge;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple sorted data flows into one sorted data flow. Unlike the Merge Join, all rows flow to the output. For example, combine two sorted lists of customers into a single sorted list. If sorting is not important, use the Union All transformation. "
+              name="Merge"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1]"
+                  name="Merge Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[gender]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[gender]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[salary]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[salary]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[joining_date]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2]"
+                  name="Merge Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[gender]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[gender]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[salary]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[salary]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[joining_date]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1]"
+                  isSorted="true"
+                  name="Merge Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[id]"
+                      name="id"
+                      sortKeyPosition="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[email]"
+                      name="email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[salary]"
+                      name="salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[joining_date]"
+                      name="joining_date" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Merge 1"
+              componentClassID="Microsoft.Merge"
+              contactInfo="Merge;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple sorted data flows into one sorted data flow. Unlike the Merge Join, all rows flow to the output. For example, combine two sorted lists of customers into a single sorted list. If sorting is not important, use the Union All transformation. "
+              name="Merge 1"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1]"
+                  name="Merge Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[gender]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[salary]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1].Columns[joining_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2]"
+                  name="Merge Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[id]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[name]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[email]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[gender]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[salary]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1]"
+                  isSorted="true"
+                  name="Merge Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[id]"
+                      name="id"
+                      sortKeyPosition="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[email]"
+                      name="email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[gender]"
+                      name="gender" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[salary]"
+                      name="salary" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1].Columns[joining_date]"
+                      name="joining_date" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[email]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[gender]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[salary]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort.Inputs[Sort Input].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[id]"
+                      name="id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[name]"
+                      name="name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[email]"
+                      name="email">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[email]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[gender]"
+                      name="gender">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[gender]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[salary]"
+                      name="salary">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[salary]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort.Outputs[Sort Output].Columns[joining_date]"
+                      name="joining_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output].Columns[joining_date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[email]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[gender]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[salary]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[id]"
+                      name="id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[name]"
+                      name="name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[email]"
+                      name="email">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[email]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[gender]"
+                      name="gender">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[gender]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[salary]"
+                      name="salary">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[salary]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output].Columns[joining_date]"
+                      name="joining_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output].Columns[joining_date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Sort 3"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 3"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[id]"
+                      cachedDataType="r8"
+                      cachedName="id"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="name"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="email"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[email]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="gender"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[gender]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[salary]"
+                      cachedDataType="r8"
+                      cachedName="salary"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[salary]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input].Columns[joining_date]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="joining_date"
+                      lineageId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[joining_date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[id]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[id]"
+                      name="id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[name]"
+                      name="name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[email]"
+                      name="email">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[email]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[gender]"
+                      name="gender">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[gender]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[salary]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[salary]"
+                      name="salary">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[salary]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[joining_date]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output].Columns[joining_date]"
+                      name="joining_date">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output].Columns[joining_date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+              endId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task 1\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Excel Source Output]"
+              endId="Package\Data Flow Task 1\Sort.Inputs[Sort Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task 1\CSE_EMP.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Excel Source Output1]"
+              endId="Package\Data Flow Task 1\Sort 1.Inputs[Sort Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task 1\IT_EMP.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Excel Source Output2]"
+              endId="Package\Data Flow Task 1\Sort 3.Inputs[Sort Input]"
+              name="Excel Source Output"
+              startId="Package\Data Flow Task 1\MECH_EMP.Outputs[Excel Source Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Merge Output 1]"
+              endId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 1]"
+              name="Merge Output 1"
+              startId="Package\Data Flow Task 1\Merge.Outputs[Merge Output 1]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Merge Output 11]"
+              endId="Package\Data Flow Task 1\Data Conversion 1.Inputs[Data Conversion Input]"
+              name="Merge Output 1"
+              startId="Package\Data Flow Task 1\Merge 1.Outputs[Merge Output 1]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task 1\DB DESTINATION TABLE.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Sort Output]"
+              endId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 1]"
+              name="Sort Output"
+              startId="Package\Data Flow Task 1\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Sort Output1]"
+              endId="Package\Data Flow Task 1\Merge.Inputs[Merge Input 2]"
+              name="Sort Output"
+              startId="Package\Data Flow Task 1\Sort 1.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Sort Output2]"
+              endId="Package\Data Flow Task 1\Merge 1.Inputs[Merge Input 2]"
+              name="Sort Output"
+              startId="Package\Data Flow Task 1\Sort 3.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{553ba5df-c424-4525-8935-bca1babc528c}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{11DA4018-7390-459E-A646-28FE78D1B30D}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="IF NOT EXISTS (&#xA;    SELECT 1&#xA;    FROM sys.tables&#xA;    WHERE name = 'task3_maintable'&#xA;      AND schema_id = SCHEMA_ID('dbo')&#xA;)&#xA;BEGIN&#xA;    CREATE TABLE dbo.task3_maintable&#xA;    (&#xA;        id INT,&#xA;        name VARCHAR(46) NOT NULL,&#xA;        email VARCHAR(46) NOT NULL,&#xA;        gender VARCHAR(1) NOT NULL,&#xA;        salary INT,&#xA;        Joining_date DATE&#xA;    );&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{907BC7E1-EF78-470C-9F3A-11F75826E007}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data Flow Task 1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Data Flow Task 1"
+          TopLeft="415.566643218035,233.266665178074" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="301.166653189395,60" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="383.566653189395,101.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.59999002864,131.666665178074"
+              Start="0,0"
+              End="111.59999002864,124.166665178074">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.8333325890369" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.8333325890369"
+                    Point2="0,65.8333325890369"
+                    Point3="4,65.8333325890369" />
+                  <mssgle:LineSegment
+                    End="107.59999002864,65.8333325890369" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.59999002864,65.8333325890369"
+                    Point2="111.59999002864,65.8333325890369"
+                    Point3="111.59999002864,69.8333325890369" />
+                  <mssgle:LineSegment
+                    End="111.59999002864,124.166665178074" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Data Flow Task 1\Data Conversion 1"
+          TopLeft="450.119023025627,319.047617924932" />
+        <NodeLayout
+          Size="116.8,41.6"
+          Id="Package\Data Flow Task 1\Merge 1"
+          TopLeft="412.499977461994,262.133331911034" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Data Flow Task 1\Sort 3"
+          TopLeft="592.738062852315,85.180951788615" />
+        <NodeLayout
+          Size="201.6,41.6"
+          Id="Package\Data Flow Task 1\DB DESTINATION TABLE"
+          TopLeft="145.899701809745,511.353965493601" />
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Data Flow Task 1\Sort"
+          TopLeft="217.023797666152,92.3142852002945" />
+        <NodeLayout
+          Size="116,41.6"
+          Id="Package\Data Flow Task 1\IT_EMP"
+          TopLeft="391.666645266945,23.7333332127995" />
+        <NodeLayout
+          Size="137.6,41.6"
+          Id="Package\Data Flow Task 1\MECH_EMP"
+          TopLeft="575.952853964894,20.8000006508828" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Data Flow Task 1\Sort 1"
+          TopLeft="402.380930395828,85.2571423922271" />
+        <NodeLayout
+          Size="128,41.6"
+          Id="Package\Data Flow Task 1\CSE_EMP"
+          TopLeft="199.305544665981,19.3888887874397" />
+        <NodeLayout
+          Size="108,41.6"
+          Id="Package\Data Flow Task 1\Merge"
+          TopLeft="298.690459870749,171.990475044544" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Sort Output2]"
+          TopLeft="645.938062852315,126.780951788615">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-156.904752056987,135.352380122419"
+              Start="0,0"
+              End="-156.904752056987,127.852380122419">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.113976342729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,76.113976342729"
+                    Point2="0,80.113976342729"
+                    Point3="-4,80.113976342729" />
+                  <mssgle:LineSegment
+                    End="-152.904752056987,80.113976342729" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-152.904752056987,80.113976342729"
+                    Point2="-156.904752056987,80.113976342729"
+                    Point3="-156.904752056987,84.113976342729" />
+                  <mssgle:LineSegment
+                    End="-156.904752056987,127.852380122419" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Sort Output1]"
+          TopLeft="455.580930395828,126.857142392227">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-86.2238038584118,45.133332652317"
+              Start="0,0"
+              End="-86.2238038584118,37.633332652317">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.684671130202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.684671130202"
+                    Point2="0,26.684671130202"
+                    Point3="-4,26.684671130202" />
+                  <mssgle:LineSegment
+                    End="-82.2238038584118,26.684671130202" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-82.2238038584118,26.684671130202"
+                    Point2="-86.2238038584118,26.684671130202"
+                    Point3="-86.2238038584118,30.684671130202" />
+                  <mssgle:LineSegment
+                    End="-86.2238038584118,37.633332652317" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Sort Output]"
+          TopLeft="265.823797666152,133.914285200295">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="70.1999955379301,38.0761898442496"
+              Start="0,0"
+              End="70.1999955379301,30.5761898442496">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5121998349213" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5121998349213"
+                    Point2="0,22.5121998349213"
+                    Point3="4,22.5121998349213" />
+                  <mssgle:LineSegment
+                    End="66.1999955379301,22.5121998349213" />
+                  <mssgle:CubicBezierSegment
+                    Point1="66.1999955379301,22.5121998349213"
+                    Point2="70.1999955379301,22.5121998349213"
+                    Point3="70.1999955379301,26.5121998349213" />
+                  <mssgle:LineSegment
+                    End="70.1999955379301,30.5761898442496" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Merge Output 11]"
+          TopLeft="529.299977461994,282.933331911034">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="2.81904556363304,36.1142860138982"
+              Start="0,0"
+              End="2.81904556363304,28.6142860138982">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-1.18095443636696,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-1.18095443636696,0"
+                    Point2="2.81904556363304,0"
+                    Point3="2.81904556363304,4" />
+                  <mssgle:LineSegment
+                    End="2.81904556363304,28.6142860138982" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Merge Output 1]"
+          TopLeft="352.690459870749,213.590475044544">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="100.076184257912,48.5428568664898"
+              Start="0,0"
+              End="100.076184257912,41.0428568664898">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.732123388544" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.732123388544"
+                    Point2="0,28.732123388544"
+                    Point3="4,28.732123388544" />
+                  <mssgle:LineSegment
+                    End="96.0761842579121,28.732123388544" />
+                  <mssgle:CubicBezierSegment
+                    Point1="96.0761842579121,28.732123388544"
+                    Point2="100.076184257912,28.732123388544"
+                    Point3="100.076184257912,32.732123388544" />
+                  <mssgle:LineSegment
+                    End="100.076184257912,41.0428568664898" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Excel Source Output2]"
+          TopLeft="645.345458408604,62.4000006508828">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.7809511377322"
+              Start="0,0"
+              End="0,15.2809511377322">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.2809511377322" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Excel Source Output1]"
+          TopLeft="391.666645266945,44.5333332127995">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.7142851288826,61.5238091794276"
+              Start="0,0"
+              End="3.21428512888258,61.5238091794276">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,57.5238091794276" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,57.5238091794276"
+                    Point2="-22.5,61.5238091794276"
+                    Point3="-18.5,61.5238091794276" />
+                  <mssgle:LineSegment
+                    End="3.21428512888258,61.5238091794276" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Excel Source Output]"
+          TopLeft="264.564671166067,60.9888887874396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.3253964128549"
+              Start="0,0"
+              End="0,23.8253964128549">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8253964128549" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Data Flow Task 1\Multicast"
+          TopLeft="453.452356176836,383.190473525818" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Data Conversion Output]"
+          TopLeft="532.119023025627,360.647617924932">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-19.0666668487911,22.5428556008854"
+              Start="0,0"
+              End="-19.0666668487911,15.0428556008854">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.27142780044272" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.27142780044272"
+                    Point2="0,11.2714278004427"
+                    Point3="-4,11.2714278004427" />
+                  <mssgle:LineSegment
+                    End="-15.0666668487911,11.2714278004427" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-15.0666668487911,11.2714278004427"
+                    Point2="-19.0666668487911,11.2714278004427"
+                    Point3="-19.0666668487911,15.2714278004427" />
+                  <mssgle:LineSegment
+                    End="-19.0666668487911,15.0428556008854" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Multicast Output 1]"
+          TopLeft="513.052356176836,424.790473525818">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-266.352654367091,86.563491967783"
+              Start="0,0"
+              End="-266.352654367091,79.063491967783">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.2817459838915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.2817459838915"
+                    Point2="0,43.2817459838915"
+                    Point3="-4,43.2817459838915" />
+                  <mssgle:LineSegment
+                    End="-262.352654367091,43.2817459838915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-262.352654367091,43.2817459838915"
+                    Point2="-266.352654367091,43.2817459838915"
+                    Point3="-266.352654367091,47.2817459838915" />
+                  <mssgle:LineSegment
+                    End="-266.352654367091,79.063491967783" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Data Flow Task 1\Flat File Destination"
+          TopLeft="634.166632017329,520.066663261586" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Multicast Output 2]"
+          TopLeft="531.58568951017,424.790473525818">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187.78094250716,95.2761897357681"
+              Start="0,0"
+              End="187.78094250716,87.7761897357681">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.8676376670418" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.8676376670418"
+                    Point2="0,38.8676376670418"
+                    Point3="4,38.8676376670418" />
+                  <mssgle:LineSegment
+                    End="183.78094250716,38.8676376670418" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.78094250716,38.8676376670418"
+                    Point2="187.78094250716,38.8676376670418"
+                    Point3="187.78094250716,42.8676376670418" />
+                  <mssgle:LineSegment
+                    End="187.78094250716,87.7761897357681" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\DB DESTINATION TABLE">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\IT_EMP">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\MECH_EMP">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\CSE_EMP">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
